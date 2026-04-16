@@ -1,7 +1,6 @@
 import json
 from groq import Groq
 
-
 # OUTILS DE L'AGENT
 def estimer_distance(ymax):
     """Calcule la distance approximative d'un obstacle."""
@@ -12,8 +11,7 @@ def estimer_distance(ymax):
     else:
         return "SÉCURITÉ : Objet éloigné (Plus de 10 mètres)."
 
-
-#  FONCTION PRINCIPALE (LE CERVEAU)
+# FONCTION PRINCIPALE 
 def analyser_scene_parking(donnees_vision, cle_api_groq):
     """
     Analyse les détections de la dashcam et retourne un diagnostic IA.
@@ -44,10 +42,9 @@ def analyser_scene_parking(donnees_vision, cle_api_groq):
             }
         }]
 
-        # Instructions strictes
         system_prompt = """
         Tu es l'IA d'assistance au stationnement embarquée dans une dashcam. Ton rôle est d'analyser l'environnement et d'assurer la sécurité totale du véhicule et des usagers.
-        
+
         INSTRUCTIONS D'ANALYSE :
         1. Contexte : Tu analyses des données de vision par ordinateur. Utilise toujours les outils à ta disposition pour obtenir des informations extérieures AVANT de rédiger ta conclusion.
         2. Échelle de risque stricte :
@@ -56,11 +53,11 @@ def analyser_scene_parking(donnees_vision, cle_api_groq):
            - Elevé : Obstacle très proche, manœuvre complexe, ralentissement exigé.
            - Critique : Danger immédiat, risque de collision, arrêt d'urgence.
         3. Concision : Le conducteur lit tes recommandations en temps réel. Sois direct et factuel.
-        
+
         CONTRAINTES DE FORMAT (RÈGLE ABSOLUE) :
         Tu dois renvoyer UNIQUEMENT un objet JSON valide, sans AUCUN texte avant ou après, et SANS balises Markdown (n'utilise pas ```json).
         Ne fais aucune liste à puces. Utilise du texte simple.
-        
+
         Format exact attendu :
         {
           "agent_llm": {
@@ -70,7 +67,6 @@ def analyser_scene_parking(donnees_vision, cle_api_groq):
           }
         }
         """
-
 
         messages_conversation = [
             {"role": "system", "content": system_prompt},
