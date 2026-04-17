@@ -40,8 +40,6 @@ Les entraînements ont révélé une supériorité écrasante du modèle **YOLOv
 * Sur les classes complexes comme les "Camions", le Small atteint une précision de **76.5%** contre seulement 52.1% pour le Nano.
 * Le Nano a totalement échoué à détecter les panneaux de circulation (mAP de 0%), tandis que le Small les détecte avec une excellente fiabilité (**81.0%**).
 
-## 🏆 Conclusion
-Le modèle YOLOv8s s'avère être l'architecture la plus pertinente pour ce projet. Bien qu'il demande légèrement plus de ressources de calcul, la hausse dramatique de la précision et sa capacité à détecter les objets minoritaires (piétons, motos, panneaux) le rendent idéal pour des applications de vidéosurveillance de parking ou d'assistance à la conduite.
 
 ---
 *Projet réalisé sur Google Colab avec le framework Ultralytics YOLOv8.*
