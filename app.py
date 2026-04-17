@@ -10,14 +10,14 @@ st.set_page_config(page_title="Assistant Parking", page_icon="🚗", layout="wid
 # 2. Chargement du modèle YOLO
 @st.cache_resource
 def charger_modele():
-    return YOLO("best_small.pt")
+    return YOLO("yolov8s_50.pt")
 
 try:
     modele_vision = charger_modele()
     modele_charge = True
 except Exception as e:
     modele_charge = False
-    st.error("Erreur : Impossible de charger le modèle YOLO. Vérifiez que best_small.pt est bien dans le dossier.")
+    st.error("Erreur : Impossible de charger le modèle YOLO. Vérifiez que yolov8s_50.pt est bien dans le dossier.")
 
 # 3. La Barre latérale
 with st.sidebar:
@@ -79,7 +79,7 @@ if uploaded_file is not None and modele_charge:
                 texte_label = f"{nom_classe} - Dist: {distance_estimee}m"
                 draw.text((coords[0], coords[1] - 15), texte_label, fill="#FF0000")
 
-            st.image(image, width="stretch")
+            st.image(image,width='stretch')
 
         with col_droite:
             st.subheader("🧠 Diagnostic Agent IA")
