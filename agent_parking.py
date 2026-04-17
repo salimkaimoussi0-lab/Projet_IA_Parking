@@ -23,7 +23,8 @@ def analyser_scene_parking(donnees_vision, cle_api_groq):
     Retourne:
     - dict : Le diagnostic formaté avec le risque, l'analyse et les recommandations.
     """
-    
+    if "vision" not in donnees_vision:
+        donnees_vision = {"vision": donnees_vision}
     try:
         # Initialisation du client
         client = Groq(api_key=cle_api_groq)
