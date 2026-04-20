@@ -1,4 +1,4 @@
-# 🚗 SAIP (Projet_IA_Parking) : Système Complet d'Assistance au Stationnement Autonome
+# 🚗 (Projet_IA_Parking) : Système Complet d'Assistance au Stationnement Autonome
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-yellow.svg)
@@ -54,7 +54,7 @@ Pour le Module A, nous avons comparé deux architectures pour trouver l'équilib
 ```bash
 git clone [https://github.com/salimkaimoussi0-lab/Projet_IA_Parking.git](https://github.com/salimkaimoussi0-lab/Projet_IA_Parking.git)
 cd Projet_IA_Parking
-## Installez les dépendances nécessaires
+## Installez les dépendances nécessaires:
 pip install -r requirements.txt
-## Lancez l'assistance au stationnement
+## Lancez l'assistance au stationnement:
 streamlit run app.py
