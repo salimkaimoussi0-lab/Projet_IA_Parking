@@ -1,11 +1,11 @@
-# 🚗 (Projet_IA_Parking) : Système Complet d'Assistance au Stationnement Autonome
+#  (Projet_IA_Parking) : Système Complet d'Assistance au Stationnement Autonome
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-yellow.svg)
 ![Groq](https://img.shields.io/badge/LLM-Groq_Llama_3-orange.svg)
 ![Streamlit](https://img.shields.io/badge/Interface-Streamlit-red.svg)
 
-## 🎯 À quoi sert ce projet ?
+##  À quoi sert ce projet ?
 Le stationnement en milieu urbain dense est l'une des principales causes d'accidents mineurs et de stress pour les conducteurs. Ce projet vise à créer un **copilote intelligent** (vision par ordinateur + IA générative) capable de :
 1. **Sécuriser les manœuvres** : Détecter en temps réel les obstacles et les usagers vulnérables (piétons, cyclistes).
 2. **Automatiser l'analyse spatiale** : Vérifier mathématiquement si un véhicule peut entrer dans une place détectée sans risque de collision.
@@ -13,7 +13,7 @@ Le stationnement en milieu urbain dense est l'une des principales causes d'accid
 
 ---
 
-## 🚦 Architecture et Pipeline de Traitement
+##  Architecture et Pipeline de Traitement
 
 Ce projet intègre des technologies "State-of-the-Art" divisées en trois modules interconnectés formant un pipeline de bout en bout :
 
@@ -23,7 +23,7 @@ Ce projet intègre des technologies "State-of-the-Art" divisées en trois module
 
 ---
 
-## 📊 Performances de la Vision (YOLOv8 Nano vs Small)
+##  Performances de la Vision (YOLOv8 Nano vs Small)
 
 Pour le Module A, nous avons comparé deux architectures pour trouver l'équilibre idéal entre vitesse d'inférence et précision de sécurité (sur 50 epochs) :
 - **YOLOv8 Nano** : Modèle ultra-léger, très rapide, mais peine sur les petits objets éloignés.
@@ -38,7 +38,7 @@ Pour le Module A, nous avons comparé deux architectures pour trouver l'équilib
 
 ---
 
-## 📁 Contenu du Dépôt
+##  Contenu du Dépôt
 * `YOLOv8_Parking.ipynb` : Notebook de recherche et d'entraînement des modèles de vision.
 * `Agent-LLM.py` : Script isolé de l'Agent IA (Cerveau) avec appels de fonctions JSON.
 * `app.py` : Code source de l'interface Web interactive (Streamlit).
@@ -48,7 +48,7 @@ Pour le Module A, nous avons comparé deux architectures pour trouver l'équilib
 
 ---
 
-## 💻 Installation & Usage
+##  Installation & Usage
 
 **1. Clonez le dépôt en local :**
 ```bash
