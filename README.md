@@ -18,7 +18,7 @@ L'objectif principal est de comparer deux architectures d'intelligence artificie
 
 ---
 
-## 🔬 Modèles et Méthodologie
+##  Modèles et Méthodologie
 
 Deux modèles ont été entraînés et mis en compétition :
 1. **YOLOv8n (Nano) :** Modèle ultra-léger (3 millions de paramètres), optimisé pour la vitesse.
@@ -63,7 +63,7 @@ Les entraînements ont révélé une supériorité écrasante du modèle **YOLOv
 
 ---
 
-# 🚀 Extension du Projet : Assistant Intelligent de Parking
+#  Extension du Projet : Assistant Intelligent de Parking
 
 Après la comparaison des modèles YOLOv8 Nano et YOLOv8 Small, le projet a été étendu afin de transformer le système de détection en une **application complète d'assistance intelligente au stationnement**.
 
@@ -79,7 +79,7 @@ Le système combine désormais :
 
 ---
 
-## 🧠 Architecture du système final
+##  Architecture du système final
 
 Le fonctionnement général de l'application est le suivant :
 
@@ -117,7 +117,7 @@ Interface Streamlit
 
 ---
 
-## 🔎 Amélioration de la détection YOLOv8
+##  Amélioration de la détection YOLOv8
 
 L'application finale utilise le modèle :
 
@@ -139,7 +139,7 @@ L'utilisateur peut modifier certains de ces paramètres directement depuis l'int
 
 ---
 
-## 🏷️ Normalisation des classes détectées
+##  Normalisation des classes détectées
 
 Les noms des classes provenant du dataset sont normalisés afin de garantir une analyse cohérente.
 
@@ -166,7 +166,7 @@ Cette normalisation permet au moteur d'analyse d'utiliser la même logique quell
 
 ---
 
-## 📐 Estimation approximative des distances
+##  Estimation approximative des distances
 
 Le projet intègre également une estimation de la distance entre la caméra et certains objets détectés.
 
@@ -193,7 +193,7 @@ Voiture | Confiance : 0.91 | Distance : ~5.2 m
 
 ---
 
-## 🛡️ Moteur de risque déterministe
+##  Moteur de risque déterministe
 
 Le niveau de risque n'est plus décidé uniquement par le LLM.
 
@@ -233,7 +233,7 @@ Cette architecture permet d'obtenir une décision plus stable et plus prévisibl
 
 ---
 
-## 🤖 Agent IA et Groq
+##  Agent IA et Groq
 
 Un Agent LLM est intégré au système afin de transformer les résultats techniques en un diagnostic compréhensible.
 
@@ -252,7 +252,7 @@ L'Agent IA reçoit les informations issues de YOLO et du moteur Python afin de g
 
 ---
 
-## 🔧 Function Calling
+##  Function Calling
 
 Le projet utilise également le **Function Calling**.
 
@@ -285,7 +285,7 @@ Rapport final
 
 ---
 
-## 🧯 Gestion des erreurs de l'Agent IA
+##  Gestion des erreurs de l'Agent IA
 
 La gestion des erreurs de l'API Groq a également été améliorée.
 
@@ -317,13 +317,13 @@ Ainsi, même en cas de problème avec Groq, le module de vision et le moteur de 
 
 ---
 
-## 🖥️ Interface Streamlit
+##  Interface Streamlit
 
 L'application possède désormais un tableau de bord interactif développé avec **Streamlit**.
 
 L'interface affiche deux parties principales.
 
-### 📷 Flux Vidéo — Vision Module
+###  Flux Vidéo — Vision Module
 
 Cette partie permet d'afficher :
 
@@ -333,7 +333,7 @@ Cette partie permet d'afficher :
 - les scores de confiance ;
 - les distances approximatives.
 
-### 🧠 Diagnostic Agent IA
+###  Diagnostic Agent IA
 
 Cette partie affiche :
 
@@ -346,7 +346,7 @@ Un tableau supplémentaire permet également de consulter précisément les obje
 
 ---
 
-## 🛠️ Technologies utilisées
+##  Technologies utilisées
 
 <p align="center">
 
@@ -372,7 +372,7 @@ Un tableau supplémentaire permet également de consulter précisément les obje
 
 ---
 
-## 📁 Fichiers principaux
+##  Fichiers principaux
 
 ```text
 Projet_IA_Parking/
@@ -431,7 +431,7 @@ Une clé API Groq peut être renseignée directement dans le menu latéral de l'
 
 ---
 
-## 📦 Dépendances principales
+##  Dépendances principales
 
 ```text
 streamlit
@@ -444,7 +444,7 @@ numpy
 
 ---
 
-## ⚠️ Limites
+##  Limites
 
 Ce projet constitue un **démonstrateur académique d'Intelligence Artificielle**.
 
@@ -493,7 +493,7 @@ L'architecture finale permet ainsi de passer progressivement de la **perception 
 
 ---
 
-### 👨‍💻 Auteur
+###  Auteur
 
 **Salim Kaimoussi**
 
