@@ -1,7 +1,30 @@
-
 # Python
 __pycache__/
 *.py[cod]
 
-# Sauvegardes locales
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Clés et secrets
+.env
+.env.*
+.streamlit/secrets.toml
+cle api.pdf
+
+# Sauvegardes
 backup_avant_fix_*/
+README_BACKUP*
+README_AVANT_*
+
+# Windows / IDE
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+
+# Temporaires
+*.log
+*.tmp
+*.temp

@@ -367,7 +367,7 @@ def evaluer_risque_scene(scene):
         }
 
     # --------------------------------------------------------
-    # PRIORITÉ AUX PIÉTONS
+    # PRIORITÉ ABSOLUE AUX PIÉTONS
     # --------------------------------------------------------
 
     if distance_pieton is not None:
@@ -378,7 +378,7 @@ def evaluer_risque_scene(scene):
                 "niveau": "Critique",
 
                 "alerte":
-                    "Danger immédiat détecté.",
+                    "Danger immédiat : piéton très proche.",
 
                 "raisons": [
                     f"Piéton estimé à environ "
@@ -821,7 +821,6 @@ def generer_diagnostic(
     scene,
 ):
 
-    # Le risque est TOUJOURS calculé localement.
     risque_local = evaluer_risque_scene(
         scene
     )
@@ -956,7 +955,6 @@ def generer_diagnostic(
             .message
         )
 
-        # Lecture uniquement pour vérifier le JSON.
         if message.tool_calls:
 
             try:
@@ -971,18 +969,12 @@ def generer_diagnostic(
             except Exception:
                 pass
 
-        # IMPORTANT :
-        # on utilise les vraies valeurs Python,
-        # pas les valeurs éventuellement modifiées
-        # par le LLM.
+        # Le risque reste calculé par Python.
         resultat_outil = risque_local
 
         # ----------------------------------------------------
         # SECOND APPEL :
-        # NOUVELLE conversation SANS OUTILS
-        #
-        # Donc plus de :
-        # "Tool choice is none, but model called a tool"
+        # nouvelle conversation SANS outils
         # ----------------------------------------------------
 
         prompt_final = f"""
@@ -1098,11 +1090,6 @@ de démonstration._
             "erreur_llm":
                 None,
         }
-
-    # --------------------------------------------------------
-    # SI GROQ PLANTE :
-    # AUCUNE FAUSSE ALERTE CRITIQUE
-    # --------------------------------------------------------
 
     except Exception as exc:
 
