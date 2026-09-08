@@ -391,31 +391,31 @@ Projet_IA_Parking/
 
 # ▶️ Tester le projet
 
-Cloner le dépôt :
+Cloner le dépôt dans un nouveau dossier :
 
 ```bash
-git clone https://github.com/salimkaimoussi0-lab/Projet_IA_Parking.git
+git clone https://github.com/salimkaimoussi0-lab/Projet_IA_Parking.git Projet_IA_Parking_TEST
 ```
 
 Entrer dans le dossier :
 
 ```bash
-cd Projet_IA_Parking
+cd Projet_IA_Parking_TEST
 ```
 
 Installer les dépendances :
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
+```
+
+Vérifier que les fichiers Python sont valides :
+
+```bash
+python -m py_compile app.py agent_parking.py
 ```
 
 Puis lancer l'application :
-
-```bash
-streamlit run app.py
-```
-
-Si la commande `streamlit` n'est pas reconnue :
 
 ```bash
 python -m streamlit run app.py
