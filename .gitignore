@@ -1,0 +1,7 @@
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Sauvegardes locales
+backup_avant_fix_*/
