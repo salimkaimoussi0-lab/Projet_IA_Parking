@@ -762,7 +762,7 @@ def rapport_local(
     return (
         introduction
 
-        + "### 👁️ Analyse de la scène\n"
+        + "### Analyse de la scène\n"
 
         + (
             f"- Détections : "
@@ -780,7 +780,7 @@ def rapport_local(
             f"\n\n"
         )
 
-        + "### 📐 Évaluation technique\n"
+        + "### Évaluation technique\n"
 
         + (
             raisons
@@ -790,14 +790,14 @@ def rapport_local(
 
         + "\n\n"
 
-        + "### ⚠️ Niveau de risque\n"
+        + "### Niveau de risque\n"
 
         + (
             f"**{risque['niveau']}** — "
             f"{risque['alerte']}\n\n"
         )
 
-        + "### 🚗 Recommandation\n"
+        + "### Recommandation\n"
 
         + risque["recommandation"]
 
@@ -840,7 +840,7 @@ def generer_diagnostic(
                     scene,
                     risque_local,
                     prefixe=(
-                        "ℹ️ Diagnostic local "
+                        "Diagnostic local "
                         "déterministe."
                     ),
                 ),
@@ -1006,17 +1006,17 @@ DONNÉES YOLO :
 
 FORMAT :
 
-### 👁️ Analyse de la scène
+### Analyse de la scène
 2 à 5 phrases.
 
-### 📐 Évaluation technique
+### Évaluation technique
 Explique uniquement les éléments réellement détectés.
 
-### ⚠️ Niveau de risque
+### Niveau de risque
 **{resultat_outil['niveau']}**
 avec une justification courte.
 
-### 🚗 Recommandation
+### Recommandation
 Une action concrète cohérente.
 
 Termine obligatoirement par :
@@ -1102,7 +1102,7 @@ de démonstration._
                     scene,
                     risque_local,
                     prefixe=(
-                        "⚠️ Le LLM est temporairement "
+                        "Le LLM est temporairement "
                         "indisponible. "
                         "Le diagnostic ci-dessous "
                         "provient du moteur local "

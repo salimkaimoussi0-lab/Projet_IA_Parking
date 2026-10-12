@@ -20,7 +20,7 @@ from agent_parking import (
 
 st.set_page_config(
     page_title="Assistant de Parking IA",
-    page_icon="🚗",
+    page_icon=None,
     layout="wide",
 )
 
@@ -33,7 +33,7 @@ YOLO_WEIGHTS = (
 
 
 st.title(
-    "🚗 Tableau de Bord : Assistant de Parking"
+    "Tableau de Bord : Assistant de Parking"
 )
 
 st.caption(
@@ -49,7 +49,7 @@ st.divider()
 # ============================================================
 
 st.sidebar.header(
-    "⚙️ Configuration"
+    "Configuration"
 )
 
 api_key_env = os.getenv(
@@ -83,7 +83,7 @@ else:
 st.sidebar.markdown("---")
 
 st.sidebar.subheader(
-    "🎯 Réglages YOLO"
+    "Réglages YOLO"
 )
 
 
@@ -505,35 +505,35 @@ def afficher_risque(
     if niveau == "Critique":
 
         st.error(
-            f"🛑 {alerte}"
+            f"{alerte}"
         )
 
 
     elif niveau == "Élevé":
 
         st.warning(
-            f"⚠️ {alerte}"
+            f"{alerte}"
         )
 
 
     elif niveau == "Moyen":
 
         st.warning(
-            f"🟠 {alerte}"
+            f"{alerte}"
         )
 
 
     elif niveau == "Faible":
 
         st.success(
-            f"✅ {alerte}"
+            f"{alerte}"
         )
 
 
     else:
 
         st.info(
-            f"ℹ️ {alerte}"
+            f"{alerte}"
         )
 
 
@@ -555,7 +555,7 @@ def texte_distance(
 # ============================================================
 
 st.subheader(
-    "📷 Acquisition Visuelle"
+    "Acquisition Visuelle"
 )
 
 
@@ -705,7 +705,7 @@ col_vision, col_agent = st.columns(
 with col_vision:
 
     st.subheader(
-        "📷 Flux Vidéo (Vision Module)"
+        "Flux Vidéo (Vision Module)"
     )
 
     st.image(
@@ -729,7 +729,7 @@ with col_vision:
 with col_agent:
 
     st.subheader(
-        "🧠 Diagnostic Agent IA"
+        "Diagnostic Agent IA"
     )
 
 
@@ -749,7 +749,7 @@ with col_agent:
 
 
     with st.expander(
-        "📍 Analyse Spatiale Détaillée",
+        "Analyse Spatiale Détaillée",
         expanded=True,
     ):
 
@@ -795,7 +795,7 @@ with col_agent:
 
 
     with st.expander(
-        "🛡️ Recommandations de Conduite",
+        "Recommandations de Conduite",
         expanded=True,
     ):
 
@@ -813,7 +813,7 @@ with col_agent:
 st.divider()
 
 st.subheader(
-    "🔎 Détails des objets détectés"
+    "Détails des objets détectés"
 )
 
 
@@ -890,7 +890,7 @@ else:
 
 
 st.caption(
-    "⚠️ Démonstrateur académique : les distances "
+    "Démonstrateur académique : les distances "
     "monoculaires sont approximatives. "
     "Un système automobile réel nécessite une "
     "calibration caméra ou des capteurs de profondeur."

@@ -1,4 +1,4 @@
-# 🚗 Projet_IA_Parking : Système de Détection de Véhicules et Piétons
+# Projet_IA_Parking : Système de Détection de Véhicules et Piétons
 
 <p align="center">
 
@@ -42,7 +42,7 @@ Pour éviter le sur-apprentissage (overfitting) et rendre le modèle robuste aux
 
 ---
 
-## 📊 Résultats et Comparaison
+## Résultats et Comparaison
 
 Les entraînements ont révélé une supériorité écrasante du modèle **YOLOv8s**, capable de mieux appréhender la complexité des 13 classes.
 
@@ -201,11 +201,11 @@ Une logique Python analyse d'abord les informations obtenues par YOLO afin de d�
 
 Les niveaux possibles sont :
 
-- 🟢 **Faible**
-- 🟠 **Moyen**
-- 🟠 **Élevé**
-- 🔴 **Critique**
-- ⚪ **Indéterminé**
+- **Faible**
+- **Moyen**
+- **Élevé**
+- **Critique**
+- **Indéterminé**
 
 Exemples de règles utilisées :
 
@@ -362,13 +362,13 @@ Un tableau supplémentaire permet également de consulter précisément les obje
 
 ### Principales technologies
 
-- 🔵 **Python** : logique principale du projet.
-- 🔴 **Streamlit** : interface web interactive.
-- 🔵 **OpenCV** : traitement et annotation des images.
-- 🔵 **Ultralytics YOLOv8** : détection des objets.
-- 🧠 **Groq** : exécution de l'Agent LLM.
-- 🔵 **NumPy** : manipulation des données et images.
-- 🟠 **Google Colab** : entraînement des modèles YOLO.
+- **Python** : logique principale du projet.
+- **Streamlit** : interface web interactive.
+- **OpenCV** : traitement et annotation des images.
+- **Ultralytics YOLOv8** : détection des objets.
+- **Groq** : exécution de l'Agent LLM.
+- **NumPy** : manipulation des données et images.
+- **Google Colab** : entraînement des modèles YOLO.
 
 ---
 
@@ -389,7 +389,7 @@ Projet_IA_Parking/
 
 ---
 
-# ▶️ Tester le projet
+# Tester le projet
 
 Cloner le dépôt dans un nouveau dossier :
 
@@ -475,7 +475,7 @@ Interface Streamlit
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 Les expérimentations montrent que **YOLOv8 Small** est nettement plus adapté que YOLOv8 Nano pour l'analyse de scènes routières complexes.
 
